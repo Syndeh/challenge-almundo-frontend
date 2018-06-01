@@ -8,6 +8,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class FilterComponent implements OnInit {
   @Output() filterNameEvent = new EventEmitter<any>();
   @Output() filterStarEvent = new EventEmitter<any>();
+  Arr = Array;
 
   constructor() { }
 

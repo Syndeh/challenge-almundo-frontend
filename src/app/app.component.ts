@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private  apiService:  APIService) { }
 
   ngOnInit() {
-    this.getHotels();
+    this.getHotels({});
   }
 
   public  getHotels(filter) {

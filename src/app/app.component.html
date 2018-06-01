@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <nav class="navbar navbar-expand-md header-bar">
-  <img width="300" alt="Almundo Logo" src="../assets/images/logo-almundo.svg">
+  <img width="300" src="../assets/images/logo-almundo.svg">
 </nav>
 <div class="container-fluid pb-5">
   <div class="row">
-    <app-filter (filterNameEvent)="filterName($event)" (filterStarEvent)="filterStar($event)" class="col-3"></app-filter>
-    <app-card-list class="col-9" [hotels]="hotels"></app-card-list>
+    <app-filter (filterNameEvent)="filterName($event)" (filterStarEvent)="filterStar($event)" class="col-sm-12 col-md-3"></app-filter>
+    <app-card-list class="col-sm-12 col-md-9" [hotels]="hotels"></app-card-list>
   </div>
 </div>
