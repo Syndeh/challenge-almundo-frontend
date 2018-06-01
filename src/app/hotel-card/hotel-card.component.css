@@ -1,0 +1,42 @@
+.hotel-image {
+  width: 100%;
+  height: 250px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.hotel-title {
+  color: #157AB1;
+  font-size: 25px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  color: #FDBA12;
+}
+
+.price-sector {
+  border-left: dashed;
+}
+
+button {
+  background-color: #164482;
+  color: white;
+  width: 90%;
+  height: 40px;
+}
+
+.currency {
+  color: #DF6800;
+  font-size: medium;
+}
+
+.price {
+  color: #DF6800;
+  font-size: large;
+  font-weight: bold;
+}

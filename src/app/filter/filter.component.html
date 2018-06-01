@@ -1,0 +1,36 @@
+<div class="card mt-md-3">
+  <div class="row">
+    <div class="col-md">
+      Filtros
+
+    </div>
+  </div>
+</div>
+<div class="card mt-md-1">
+  <div class="row">
+    <div class="col-md">
+
+      <input #name placeholder="ingrese el nombre del hotel"/>
+      <button (click)="filter(name.value); name.value=''">
+        Aceptar
+      </button>
+    </div>
+  </div>
+</div>
+<div class="card mt-md-1">
+  <div class="row">
+    <div class="col-md">
+      <tr *ngFor="let entry of ['todas las estrellas',1,2,3,4,5]; let idx = index">
+        <td>
+          <input type="radio"
+                 name="radiogroup"
+                 [checked]="idx === 0"
+                 (change)="filterStar(idx)"
+          >
+        </td>
+        {{entry}}
+      </tr>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="card mt-md-3">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="hotel-image p-lg-3 float-left" src="{{'../../assets/images/hotels/'+ hotel.image}}">
+    </div>
+    <div class="col-md-4">
+      <div class="hotel-title row mt-lg-3">
+        {{ hotel.name }}
+      </div>
+      <div class="row">
+        <div *ngFor="let i of Arr(hotel.stars).fill(1)">
+          <img class="star m-lg-1" src="{{'../../assets/icons/filters/star.svg'}}">
+        </div>
+      </div>
+      <div class="row">
+        <div class="m-lg-1" *ngFor="let amenity of hotel.amenities">
+          <img class="icon" src="{{'../../assets/icons/amenities/'+ amenity+'.svg'}}">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 price-sector text-center">
+      <div class="mt-lg-5">
+        Precio por noche por
+        habitación
+      </div>
+      <div class="row mt-lg-4">
+        <div class="col">
+          <div class="text-center">
+            <span class="currency">ARS</span>
+            <span class="price">{{hotel.price}}</span>
+
+          </div>
+        </div>
+      </div>
+      <button class="mt-lg-4">Ver hotel</button>
+
+    </div>
+  </div>
+</div>
